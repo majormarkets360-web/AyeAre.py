@@ -1,0 +1,54 @@
+mev-arbitrage-bot/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── .streamlit/
+│   ├── config.toml
+│   └── secrets.toml.example
+├── src/
+│   ├── __init__.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── engine.py
+│   │   ├── strategies.py
+│   │   └── flash_loan.py
+│   ├── exchanges/
+│   │   ├── __init__.py
+│   │   ├── balancer.py
+│   │   └── curve.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── web3_utils.py
+│   │   ├── math_utils.py
+│   │   └── logger.py
+│   ├── monitoring/
+│   │   ├── __init__.py
+│   │   ├── mempool.py
+│   │   └── events.py
+│   └── ui/
+│       ├── __init__.py
+│       ├── app.py
+│       ├── pages/
+│       │   ├── 1_Dashboard.py
+│       │   ├── 2_Execute.py
+│       │   ├── 3_History.py
+│       │   └── 4_Settings.py
+│       └── components/
+│           ├── charts.py
+│           └── metrics.py
+├── contracts/
+│   ├── AutoArbitrageBot.sol
+│   └── abi/
+│       └── AutoArbitrageBot.json
+├── scripts/
+│   ├── deploy_contract.py
+│   ├── setup_database.py
+│   └── test_arbitrage.py
+├── data/
+│   └── trades.db
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+├── .env.example
+├── .gitignore
+└── README.md
